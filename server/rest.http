@@ -1,0 +1,18 @@
+GET http://localhost:8000/v1/planets
+
+
+GET http://localhost:8000/v1/launches?limit=3&page=5
+
+POST http://localhost:8000/v1/launches
+Content-Type: application/json
+
+{
+  "mission": "ZTM222",
+  "rocket": "ZTM Startship",
+  "target": "Kepler-62",
+  "launchDate": "Jun 1, 2025"
+}
+
+DELETE http://localhost:8000/v1/launches/102
+
+GET https://api.spacexdata.com/v4/launches/latest
