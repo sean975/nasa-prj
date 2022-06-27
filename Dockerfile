@@ -1,4 +1,4 @@
-FROM node/lts-alpine
+FROM node:lts-alpine
 
 WORKDIR /app
 
@@ -20,3 +20,5 @@ USER node
 CMD ["npm", "start", "--prefix", "server"]
 
 EXPOSE 8000
+
+
